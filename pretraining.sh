@@ -12,7 +12,7 @@ LOG_DIR='./CausalMAE_master/output/PT_results'
 # default 0.4 0.8
 
 CUDA_VISIBLE_DEVICES=0,1  python -m torch.distributed.launch --nproc_per_node=2 --master_port=8675 --use_env run_causalMae_pretraining.py \
-        --model pretrain_causalMae \
+        --model pretrain_causalMAE \
         --phase 2 \
         --mask_ratio 0.8 \
         --batch_size 128 \

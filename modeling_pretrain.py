@@ -2,7 +2,7 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from AdaGRF import AdaptiveCNN_Encoder
+from adaGRF import AdaptiveCNN_Encoder
 from vit_decoder import PretrainVisionTransformerDecoder
 import numpy as np
 

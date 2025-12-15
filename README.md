@@ -5,30 +5,33 @@ Gait Classification(in the submission of the FCS(Frontiers of Computer Science)-
 # Download  Rec-G and NIH DataSets
 ...to be continued
 
-# Download pre-trained CausalMAE in Phase I
+# Download pre-trained models CausalMAE in Phase I
 
 ...to be continued
 
 
-# Download pre-trained CausalMAE in Phase II
+# Download pre-trained models CausalMAE in Phase II
 
 ...to be continued
 
 
 # Results
 
-This table summarizes our ImageNet results for pure guided diffusion models:
+This table summarizes our Rec-G results for CausalMAE:
 
-| Dataset          | Acc  | F1-Score | FLOPs |
-|------------------|------|-----------|--------|
-|  Rec-G  X | xx | xx      | xx   |
-|  Rec-G  X| xx | xx      | xx   |
-|  Rec-G  X | xx | xx    | xx  |
-|  Rec-G  X| xx | xx     |xx   |
+| Dataset          | Baselines |  Acc  | F1-Score | FLOPs |
+|------------------|------|-----------|--------|--------|
+|  Rec-G  X | xx | xx | xx  | xx   |
+|  Rec-G  X | xx | xx | xx  | xx   |
+|  Rec-G  X | xx | xx | xx  | xx   |
+|  Rec-G  X | CausalMAE | xx | xx  | xx   |
 
-This table shows the best results for high resolutions when using upsampling and guidance together:
+This table summarizes our NIH results for CausalMAE:
 
-| Dataset          | Acc  | F1-Score | FLOPs |
-|------------------|------|-----------|--------|
-|  NIH X|  xx | xx      | xx  |
-|  X | 3.85 | xx     |xx  |
+| Dataset          | Baselines |  Acc  | F1-Score | FLOPs |
+|------------------|------|-----------|--------|--------|
+|  NIH X|  xx | xx | xx    | xx  |
+|  NIH X|  xx | xx | xx    | xx  |
+|  NIH X|  xx | xx | xx    | xx  |
+|  NIH X|  xx | xx | xx    | xx  |
+

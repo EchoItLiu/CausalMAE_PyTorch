@@ -1,6 +1,7 @@
 # CausalMAE
 
-This is the codebase for **CausalMAE: Causal Masked Autoencoder for Pathological Gait Classification** (submitted to FCS - Frontiers of Computer Science, Manuscript ID: 252070).
+This is the codebase for **CausalMAE: Causal Masked Autoencoder for Pathological Gait Classification** (submitted to [FCS - Frontiers of Computer Science, Manuscript ID: 252070](https://mc.manuscriptcentral.com/hepfcs)).
+
 
 # Download Rec-G and NIH Datasets
 

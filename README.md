@@ -20,11 +20,19 @@ Further details regarding these datasets are available via the provided links. F
 
 # Download Pre-trained Models
 
-## Phase I Pre-trained Models
-...to be continued
+[UC (password: SjR1)](https://drive.uc.cn/s/1b7b5a2fa5384) | [Azure (password: 567)](http://www.jd.com) | [Google Drive (password: gd123)](http://www.jd.com)
 
-## Phase II Pre-trained Models
-...to be continued
+ * Phase I:
+
+```
+OUTPUT_DIR_PHASE1="./CausalMAE_master/output/pretrain_causalMae/phase1" OUTPUT_DIR_PHASE2="./CausalMAE_master/output/pretrain_causalMae/phase2"
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=8675 --use_env run_causalMae_pretraining.py --phase 1 --mask_ratio 0.4  --batch_size 256 --opt adamw --opt_betas 0.9 0.95 --warmup_epochs 40 --epochs 150 --output_dir_phase1 ${OUTPUT_DIR_PHASE1} --output_dir_phase2 ${OUTPUT_DIR_PHASE2} --log_dir ${LOG_DIR}
+```
+ * Phase II:
+
+```
+OUTPUT_DIR_PHASE1="./CausalMAE_master/output/pretrain_causalMae/phase1" OUTPUT_DIR_PHASE2="./CausalMAE_master/output/pretrain_causalMae/phase2"
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=8675 --use_env run_causalMae_pretraining.py --phase 1 --mask_ratio 0.8  --batch_size 128 --opt adamw --opt_betas 0.9 0.95 --warmup_epochs 40 --epochs 150 --output_dir_phase1 ${OUTPUT_DIR_PHASE1} --output_dir_phase2 ${OUTPUT_DIR_PHASE2} --log_dir ${LOG_DIR}
 
 # Results
 
